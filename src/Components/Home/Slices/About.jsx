@@ -5,6 +5,11 @@ import brand3 from '../../../imgs/3.svg'
 import brand4 from '../../../imgs/4.svg'
 import brand5 from '../../../imgs/5.svg'
 import brand6 from '../../../imgs/6.svg'
+import { IoMdStar } from "react-icons/io";
+import { FaSmile } from "react-icons/fa";
+import photo2 from '../../../imgs/Photo2.png'
+import Pattern from '../../../imgs/Pattern.svg'
+
 export default function About() {
     const brands = [brand1, brand2, brand3, brand4, brand5, brand6]
    
@@ -18,7 +23,38 @@ export default function About() {
                 )}
            
         </ul>
+        <div className="container m-auto">
+        <div className='flex flex-wrap mx-10 justify-around gap-20 mt-36'>
+        <div className=' max-w-[480px]'>
+          <span className='text-base font-normal text-[#181818] bg-[#FFCC4A] px-3	rounded-full'>ABOUT US</span>
+          <h3 className='text-[45px] font-bold text-[#181818]'>About our Consuting Agency Team</h3>
+          <h5 className='font-bold	text-lg	text-[rgb(24,24,24)]'>We create experiences and build products that make business grow</h5>
+          <h6 className='text-base font-normal text-[#595566]'>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</h6>
+          <ul className=' relative flex flex-wrap justify-around gap-y-10 mt-10 after:content-[""] after:bg-[#D8D8D8] after:absolute after:w-full after:h-0.5 after:-top-5 after:-left-0       before:content-[""] before:bg-[#D8D8D8] before:absolute before:w-full before:h-0.5 before:-bottom-5 before:-left-0'>
+            <li className='bg-[#F6F6F6] rounded-[15px] px-9 py-5'> 
+              <p className='text-3xl flex items-center gap-3 mb-3'><IoMdStar className=' text-[#FFCC4A]'/> <span className='font-bold	text-[#181818]'>400+</span></p>
+              <span className='text-base font-bold'>Business Services</span>
+            </li>
+            <li className='sm:block hidden'><div className=' w-0.5 h-full bg-[#D8D8D8]'></div></li>
+            <li className='bg-[#F6F6F6] rounded-[15px] px-9 py-5'>
+              <p className='text-3xl flex items-center gap-3 mb-3'><FaSmile className=' text-[#4EAF4E]'/> <span className='font-bold	text-[#181818]'>100+</span></p>
+              <span className='text-base font-bold'>Happy Customer</span>
+            </li>
+          </ul>
         
+        </div>
+        <div className='relative max-w-[514px]'>        
+         <div className="relative z-50">
+            <div className="relative">
+                <div className='after:content-[""] after:z-20 after:bg-[url("./imgs/Pattern.svg")] after:bg-cover after:absolute after:w-3/5 after:bg-no-repeat after:h-full after:top-1/2 after:-left-1/2 after:transform after:translate-x-1/2 after:-translate-y-20'>
+                    <img src={photo2} alt="Description of image" className="rounded-special relative z-50" />
+                </div>
+            </div>
+        </div>
+        
+        </div>
+       </div>
+        </div>
     </section>
   )
 }

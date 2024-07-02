@@ -1,5 +1,6 @@
 import React from 'react'
 // import photo from '../../../imgs/Photo.png'
+
 import { PiNotepad } from "react-icons/pi";
 
 export default function Main() {
@@ -15,6 +16,7 @@ export default function Main() {
         <li className='m-auto rounded-full flex items-center gap-3 bg-[white] text-[#181818] py-2 px-3 border-2 border-[#EBEBEB]'><PiNotepad className='bg-[#4EAF4E] w-11	h-11 rounded-full p-2'/>Book a Meeting</li>
        </ul>
        </article>
+      
       </div>
     </section>
   )
