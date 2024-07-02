@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       screens: {
         'xSmall': '540px',
+        '2xSM':'370px'
       },
       borderRadius: {
         'special': '29px'
