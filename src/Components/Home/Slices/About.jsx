@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import brand1 from '../../../imgs/1.svg'
 import brand2 from '../../../imgs/2.svg'
 import brand3 from '../../../imgs/3.svg'
@@ -8,11 +8,35 @@ import brand6 from '../../../imgs/6.svg'
 import { IoMdStar } from "react-icons/io";
 import { FaSmile } from "react-icons/fa";
 import photo2 from '../../../imgs/Photo2.png'
-import Pattern from '../../../imgs/Pattern.svg'
-
+import "../../../circleProgress.css"
 export default function About() {
     const brands = [brand1, brand2, brand3, brand4, brand5, brand6]
-   
+  
+    const [loadingPercent, setloadingPercent] = useState(0);
+    const [dot, setDot] = useState(0);
+    const [text, setText] = useState("00");
+  
+    useEffect(() => {
+      
+        const secs = 50;
+  
+        const currentLoadingPercent = 440 - 440 * (secs / 60);
+        setloadingPercent(currentLoadingPercent);
+  
+        const currentDot = 360 * (secs / 60);
+        setDot(currentDot);
+  
+        setText(secs >= 10 ? secs : `0${secs}`);
+ 
+    }, []);
+
+
+
+
+
+
+
+
   return (
     <section>
         <ul className=' flex gap-10 items-center mx-10 md:flex-nowrap flex-wrap justify-center'>
@@ -43,13 +67,36 @@ export default function About() {
           </ul>
         
         </div>
-        <div className='relative max-w-[514px]'>        
+        <div className='relative max-w-[514px] xSmall:m-0 mx-auto'>        
          <div className="relative z-50">
             <div className="relative">
-                <div className='after:content-[""] after:z-20 after:bg-[url("./imgs/Pattern.svg")] after:bg-cover after:absolute after:w-3/5 after:bg-no-repeat after:h-full after:top-1/2 after:-left-1/2 after:transform after:translate-x-1/2 after:-translate-y-20'>
+                <div className=' after:content-[""] after:z-20 after:bg-[url("./imgs/Pattern.svg")] after:bg-cover after:absolute after:w-3/5 after:bg-no-repeat after:h-full after:top-1/2 after:-left-1/2 after:transform after:translate-x-1/2 after:-translate-y-20'>
                     <img src={photo2} alt="Description of image" className="rounded-special relative z-50" />
                 </div>
+                <article className=' absolute max-w-96 xSmall:-bottom-10 -bottom-60 px-3 py-2 -left-10 z-50 bg-white shadow-2xl justify-around items-center rounded-special flex flex-wrap '>
+                    <div className="Appstar ">
+                        <div className="container">
+                          <div className="text">{text}+</div>
+                          <div style={{ transform: `rotate(${dot}deg)` }} className="dot"></div>
+                          <svg>
+                            <circle cx="70" cy="70" r="70" />
+                            <circle strokeDashoffset={loadingPercent} cx="70" cy="70" r="70" strokeLinecap="round"   />
+                          </svg>
+                        </div>
+                      </div>
+                      <p className=' text-[#181818] text-base font-bold max-w-32 xSmall:text-left text-center'>Market Experiences</p>
+                   </article>
+                
             </div>
+
+
+
+
+
+            
+      
+
+            
         </div>
         
         </div>
