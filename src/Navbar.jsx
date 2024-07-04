@@ -36,7 +36,7 @@ export default function Navbar() {
     
     <nav className='bg-[#1B1B1B] py-10 relative'>
       <div className="justify-around flex container m-auto ">
-        <div className='flex gap-2'> <img src={logo} alt="logo" className=' w-9'/><span className='text-3xl font-semibold text-white '>AskExperts</span></div>
+        <div className='flex gap-2 items-center'> <img src={logo} alt="logo" className=' w-10'/><span className='text-3xl font-semibold text-white '>AskExperts</span></div>
         <ul className={`z-50	flex xl:flex-row flex-col gap-4 text-lg	font-normal	 xl:static xl:w-auto xl:bg-transparent absolute left-0 bg-[#1B1B1B] w-full ${toggleMenu ? 'h-56' : 'h-0'} xl:h-auto duration-700 overflow-hidden top-full`}>
           <li className=' flex items-center cursor-pointer'><GoDotFill className=' text-[#4EAF4E]'/><span className=' text-[#5AB612]'>Home</span></li>
           <li className='text-white flex items-center cursor-pointer'><GoDot className=' me-2 text-[#515151] '/>About</li>

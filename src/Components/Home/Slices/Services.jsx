@@ -46,7 +46,7 @@ export default function Services() {
             <p className=' m-auto text-[#181818] font-bold text-[45px] max-w-4xl '>Get Control Over Your Business I take your finance to next level</p>
             </div>
 
-            <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mt-8 mx-10'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-8 mx-10'>
                 {services.map((data, index) => 
                 
                 <article key={index} className=' bg-[#EBEBEB] rounded-3xl p-10 hover:bg-[#181818] transition cursor-pointer group/parent'>
