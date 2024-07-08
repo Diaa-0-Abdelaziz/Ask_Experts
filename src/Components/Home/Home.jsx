@@ -4,6 +4,7 @@ import About from './Slices/About'
 import Services from './Slices/Services'
 import Proccess from './Slices/Proccess'
 import Proccess2 from './Slices/Proccess2'
+import FeedBack from './Slices/FeedBack'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <Services/>
     <Proccess/>
     <Proccess2/>
+    <FeedBack/>
     </>
   )
 }

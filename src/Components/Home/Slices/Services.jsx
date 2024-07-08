@@ -49,10 +49,10 @@ export default function Services() {
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-8 mx-10'>
                 {services.map((data, index) => 
                 
-                <article key={index} className=' bg-[#EBEBEB] rounded-3xl p-10 hover:bg-[#181818] transition cursor-pointer group/parent'>
+                <article key={index} className=' bg-[#EBEBEB] rounded-3xl p-10 hover:bg-[#181818]  cursor-pointer group/parent transition-all duration-500'>
                  <img src={data.image} alt="" />
-                 <p className='font-semibold text-[25px] group-hover/parent:text-white transition'>{data.title}</p>
-                 <p className='font-normal text-base text-[#595566] group-hover/parent:text-white transition'>{data.descrip }</p>
+                 <p className='font-semibold text-[25px] group-hover/parent:text-white transition-all duration-500'>{data.title}</p>
+                 <p className='font-normal text-base text-[#595566] group-hover/parent:text-white transition-all duration-500'>{data.descrip }</p>
                 </article>    
                 )}
                 
