@@ -88,14 +88,6 @@ export default function About() {
                    </article>
                 
             </div>
-
-
-
-
-
-            
-      
-
             
         </div>
         

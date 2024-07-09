@@ -28,7 +28,7 @@ export default function FeedBack() {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
@@ -69,7 +69,7 @@ export default function FeedBack() {
           <img src={pro.img} alt="" className='w-[210px] h-[210px] rounded-full' loading='lazy' />
           <div className=' text-center'>
           <p className='font-semibold text-xl	text-[#181818] mt-5'>{pro.Name}</p>
-          <p className='font-semibold text-base text-[#4EAF4E] mt-5'>{pro.Job}</p>
+          <p className='font-semibold text-base text-[#4EAF4E] mt-2'>{pro.Job}</p>
           </div>
         </div>
 
