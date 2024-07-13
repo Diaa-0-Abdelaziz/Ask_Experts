@@ -5,7 +5,7 @@ import { PiNotepad } from "react-icons/pi";
 
 export default function Main() {
   return (
-    <section className='relative bg-red-700 bg-[url("./imgs/Photo.png")] bg-cover	 py-48'>
+    <section className='relative bg-[url("./imgs/Photo.png")] bg-cover	 py-48'>
       {/* <img src={photo} alt="" className=' w-full'/> */}
       <div className="container ">
       <article className='bg-[#FFFFFFD9] py-[50px] 2xSM:px-[58px] md:ml-36 mx-4 px-5  max-w-xl	 rounded-special'>
