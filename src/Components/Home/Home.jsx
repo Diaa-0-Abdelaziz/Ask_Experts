@@ -7,6 +7,7 @@ import Proccess2 from './Slices/Proccess2'
 import FeedBack from './Slices/FeedBack'
 import BookNow from './Slices/BookNow'
 import Blog from './Slices/Blog'
+import Contact from './Slices/Contact'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
     <FeedBack/>
     <BookNow/>
     <Blog/>
+    <Contact/>
     </>
   )
 }

@@ -5,7 +5,7 @@ import picture1 from "../../../imgs/Photo (10).jpg"
 import picture2 from "../../../imgs/Photo (11).jpg"
 export default function Blog() {
   return (
-   <section className='bg-[#F5F5F5] mb-52 py-20' >
+   <section className='bg-[#F5F5F5] py-20' >
     <div className=' max-w-5xl m-auto flex flex-col'>
     <div className=' flex flex-wrap md:justify-between justify-around  items-end mb-10'>
     <div>
