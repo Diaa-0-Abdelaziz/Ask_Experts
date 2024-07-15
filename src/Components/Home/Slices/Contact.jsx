@@ -47,24 +47,24 @@ export default function Contact() {
        <form>
         <div className='flex flex-wrap gap-2 justify-around'>
         <div className="mb-5">
-          <label for="fullname" className="block mb-2">Full Name</label>
-          <input type="text" id="fullname" className="border-2 w-[318px] rounded-full py-[22px] px-[22px] outline-none" placeholder="john david"/>
+          <label htmlFor="fullname" className="block mb-2">Full Name</label>
+          <input type="text" id="fullname" className="border-2  rounded-full py-[22px] px-[22px] outline-none" placeholder="john david"/>
         </div>
         <div className="mb-5">
-          <label for="Email" className="block mb-2">Email</label>
-          <input type="email" id="Email" className="border-2 w-[318px] rounded-full py-[22px] px-[22px] outline-none" placeholder="consult@mail.com"/>
+          <label htmlFor="Email" className="block mb-2">Email</label>
+          <input type="email" id="Email" className="border-2  rounded-full py-[22px] px-[22px] outline-none" placeholder="consult@mail.com"/>
         </div>
         <div className="mb-5">
-          <label for="Phone" className="block mb-2">Phone</label>
-          <input type="tel" id="Phone" className="border-2 w-[318px] rounded-full py-[22px] px-[22px] outline-none" placeholder="+008 654 231"/>
+          <label htmlFor="Phone" className="block mb-2">Phone</label>
+          <input type="tel" id="Phone" className="border-2  rounded-full py-[22px] px-[22px] outline-none" placeholder="+008 654 231"/>
         </div>
         <div className="mb-5">
-          <label for="Company" className="block mb-2">Company(optional)</label>
-          <input type="text" id="Company" className="border-2 w-[318px] rounded-full py-[22px] px-[22px] outline-none" placeholder="yourcompany.com"/>
+          <label htmlFor="Company" className="block mb-2">Company(optional)</label>
+          <input type="text" id="Company" className="border-2  rounded-full py-[22px] px-[22px] outline-none" placeholder="yourcompany.com"/>
         </div>
         </div>
   <div>
-  <label for="message" className="block mb-2 ">Message</label>
+  <label htmlFor="message" className="block mb-2 ">Message</label>
   <textarea id="message" rows="4" className=" border-2 w-full rounded-3xl resize-none py-[22px] px-[22px] outline-none" placeholder="Briefly tell us about your project and your current goals. How can we help you?"></textarea>
   </div>
   <div className=' w-[154.6px] mt-5'>
