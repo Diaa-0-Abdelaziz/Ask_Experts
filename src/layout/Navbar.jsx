@@ -8,14 +8,36 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io5";
-import logo from './imgs/Logo.svg';
+import logo from '../imgs/Logo.svg';
 import { GoDotFill } from "react-icons/go";
 import { GoDot } from "react-icons/go";
 import { PiPhoneLight } from "react-icons/pi";
 import { IoClose } from "react-icons/io5";
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
     const [toggleMenu, setToggleMenu] = useState(false)
+
+    let location = useLocation()
+
+    let navLinks = [
+      {
+        pathname:'/',
+        navName:'Home'
+      },
+      {
+        pathname:'/about',
+        navName:'About'
+      },
+    ]
+
+
+
+
+
+
+
+
     const handleMenu = ()=>{
         setToggleMenu(!toggleMenu)
     }
@@ -38,12 +60,24 @@ export default function Navbar() {
       <div className="justify-around flex container m-auto ">
         <div className='flex gap-2 items-center'> <img src={logo} alt="logo" className=' w-10'/><span className='text-3xl font-semibold text-white '>AskExperts</span></div>
         <ul className={`z-50	flex xl:flex-row flex-col gap-4 text-lg	font-normal	 xl:static xl:w-auto xl:bg-transparent absolute left-0 bg-[#1B1B1B] w-full ${toggleMenu ? 'h-56' : 'h-0'} xl:h-auto duration-700 overflow-hidden top-full`}>
-          <li className=' flex items-center cursor-pointer'><GoDotFill className=' text-[#4EAF4E]'/><span className=' text-[#5AB612]'>Home</span></li>
-          <li className='text-white flex items-center cursor-pointer'><GoDot className=' me-2 text-[#515151] '/>About</li>
-          <li className='text-white flex items-center cursor-pointer'><GoDot className=' me-2 text-[#515151]'/>Services</li>
+         
+         {navLinks.map((link, index) =>
+        
+        <li className=' flex items-center cursor-pointer' key={index}>
+          
+          {location.pathname === link.pathname ? <GoDotFill className=' text-[#4EAF4E]'/> : <GoDot className=' text-[#515151]'/>}
+          <Link className={` ${location.pathname === link.pathname ? 'text-[#5AB612]' : 'text-white'}`} to={link.pathname}>{link.navName}</Link></li>
+        )}
+          {/* <li className='text-white flex items-center cursor-pointer'><GoDot className='  '/>About</li> */}
+
+
+
+          {/* <li className='text-white flex items-center cursor-pointer'><GoDot className=' me-2 text-[#515151]'/>Services</li>
           <li className='text-white flex items-center cursor-pointer'><GoDot className=' me-2 text-[#515151]'/>Work</li>
           <li className='text-white flex items-center cursor-pointer'><GoDot className=' me-2 text-[#515151]' />Pages</li>
-          <li className='text-white flex items-center cursor-pointer'><GoDot className=' me-2 text-[#515151]'/>Contact</li>
+          <li className='text-white flex items-center cursor-pointer'><GoDot className=' me-2 text-[#515151]'/>Contact</li> */}
+       
+       
         </ul>
         <div className='text-lg	hidden gap-2 bg-white py-2 sm:flex	pr-10 pl-2.5	 rounded-[42px]'>
           <PiPhoneLight className=' text-[hsl(0,0%,5%)] w-11	h-11 p-2 bg-[#FFC32B] rounded-full'/>

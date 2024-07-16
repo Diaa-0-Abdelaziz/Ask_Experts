@@ -1,15 +1,28 @@
-import Home from './Components/Home/Home';
-import Footer from './Footer';
-import Navbar from './Navbar';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import './output.css';
+import Layout from './layout/Layout';
+import Loading from './Loading';
+const Home = lazy(() => import('./Components/Home/Home'));
+const About = lazy(() => import('./Components/About/About'));
 
 
 function App() {
+  let routes = createBrowserRouter([
+    {
+      path:"",
+      element:<Layout/>,
+      children:[
+        {index:true, element:<Suspense fallback={<Loading/>}><Home/></Suspense>},
+        {path:'about', element:<Suspense fallback={<Loading/>}><About/></Suspense>},
+      ]
+    }
+  ])
   return (
     <>
-    <Navbar/>
-    <Home/>
-    <Footer/>
+ 
+ <RouterProvider router={routes}></RouterProvider>
+    
     </>
   );
 }

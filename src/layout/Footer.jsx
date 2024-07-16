@@ -1,6 +1,6 @@
 import React from 'react'
 // import photo from "./imgs/Photo-footer.jpg"
-import logo from "./imgs/Logo.png"
+import logo from "../imgs/Logo.png"
 export default function Footer() {
   return (
    <footer className=' relative mt-10 bg-[url("./imgs/Photo-footer.jpg")]  bg-cover'>
@@ -83,7 +83,7 @@ export default function Footer() {
 
     </div>
 
-    <p className=' mt-20 pt-5 relative text-white text-base text-center	font-normal	after:content-[""] after:border-[#707070] after:absolute after:w-3/4 after:border after:top-0 after:left-1/2 after:-translate-x-1/2'>&copy;2022 Consultalk. All rights reserved | Terms of Service | Privacy Policy</p>
+    <p className=' mx-5 mt-20 pt-5 relative text-white text-base text-center	font-normal	after:content-[""] after:border-[#707070] after:absolute after:w-3/4 after:border after:top-0 after:left-1/2 after:-translate-x-1/2'>&copy;2022 Consultalk. All rights reserved | Terms of Service | Privacy Policy</p>
 
     </div>
    </footer>
