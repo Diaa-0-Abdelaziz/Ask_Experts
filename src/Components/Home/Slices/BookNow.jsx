@@ -7,7 +7,7 @@ export default function BookNow() {
     <section className=' my-20'>
      <div className=' p-10 rounded-special overflow-hidden  m-auto bg-[#181818] flex Screen-920:flex-row flex-col gap-y-20 items-center justify-between max-w-5xl'>
        <div>
-       <span className='  text-base font-normal text-[#FFFFFF] tracking-[2px] bg-[#4EAF4E] px-4 uppercase	rounded-full'>Client Feedback</span>
+       <span className='  text-base font-normal text-[#FFFFFF] tracking-[2px] bg-[#4EAF4E] px-4 uppercase	rounded-full'>Book Now</span>
        <h3 className='max-w-[480px] text-[45px] font-bold text-white	'>Better Consult, <span className=' text-[#727272]'>Better</span> Results</h3>
        <p className='font-normal my-5 max-w-[420px]	text-base	text-white'>Our software development agency has a growth up to 30% per each year. If you are result-oriented, not afraid to take initiative – drop us a note and join our team!</p>
        <div className='text-lg gap-2 bg-[#FFC32B] py-2 flex w-[250px]	pr-10 pl-2.5	 rounded-[42px]'>

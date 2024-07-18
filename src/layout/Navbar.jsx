@@ -41,6 +41,9 @@ export default function Navbar() {
     const handleMenu = ()=>{
         setToggleMenu(!toggleMenu)
     }
+    const handleCloseMenu = ()=>{
+        setToggleMenu(false)
+    }
   return (
     <>
     <div className="bg-[#181818] xSmall:block hidden">
@@ -59,14 +62,14 @@ export default function Navbar() {
     <nav className='bg-[#1B1B1B] py-10 relative'>
       <div className="justify-around flex container m-auto ">
         <div className='flex gap-2 items-center'> <img src={logo} alt="logo" className=' w-10'/><span className='text-3xl font-semibold text-white '>AskExperts</span></div>
-        <ul className={`z-50	flex xl:flex-row flex-col gap-4 text-lg	font-normal	 xl:static xl:w-auto xl:bg-transparent absolute left-0 bg-[#1B1B1B] w-full ${toggleMenu ? 'h-56' : 'h-0'} xl:h-auto duration-700 overflow-hidden top-full`}>
+        <ul className={`z-50	flex xl:flex-row flex-col gap-4 text-lg	font-normal	 xl:static xl:w-auto xl:bg-transparent absolute left-0 bg-[#1B1B1B] w-full ${toggleMenu ? 'h-56' : 'h-0'} xl:h-auto duration-500 overflow-hidden top-full`}>
          
          {navLinks.map((link, index) =>
         
         <li className=' flex items-center cursor-pointer' key={index}>
           
           {location.pathname === link.pathname ? <GoDotFill className=' text-[#4EAF4E]'/> : <GoDot className=' text-[#515151]'/>}
-          <Link className={` ${location.pathname === link.pathname ? 'text-[#5AB612]' : 'text-white'}`} to={link.pathname}>{link.navName}</Link></li>
+          <Link className={` ${location.pathname === link.pathname ? 'text-[#5AB612]' : 'text-white'}`} to={link.pathname} onClick={handleCloseMenu}>{link.navName}</Link></li>
         )}
           {/* <li className='text-white flex items-center cursor-pointer'><GoDot className='  '/>About</li> */}
 

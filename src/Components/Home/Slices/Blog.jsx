@@ -6,7 +6,7 @@ import picture2 from "../../../imgs/Photo (11).jpg"
 export default function Blog() {
   return (
    <section className='bg-[#F5F5F5] py-20' >
-    <div className=' max-w-5xl mx-3 m-auto flex flex-col'>
+    <div className=' max-w-5xl mx-auto flex flex-col px-5'>
     <div className=' flex flex-wrap md:justify-between justify-around  items-end mb-10'>
     <div>
     <span className='text-base font-normal text-[#FFFFFF] tracking-[2px] bg-[#4EAF4E] px-4 uppercase	rounded-full'>Blog</span>

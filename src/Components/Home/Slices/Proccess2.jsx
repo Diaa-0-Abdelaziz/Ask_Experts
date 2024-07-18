@@ -80,10 +80,7 @@ export default function Proccess2() {
       </article>
         )}
      </div>
-     </div>
-    </div>
-   
-   {/* <ul className=' flex justify-around flex-wrap md:gap-0 gap-10 '>
+   <ul className=' flex justify-around flex-wrap md:gap-0 gap-10 '>
     <li>
         <p className=' text-[50px] font-bold'>1125+</p>
         <p className=' text-lg font-medium'>Successful Work</p>
@@ -101,7 +98,10 @@ export default function Proccess2() {
         <p className=' text-lg font-medium'>Creative Idea</p>
     </li>
    
-   </ul> */}
+   </ul>
+     </div>
+    </div>
+   
    </section>
   )
 }
