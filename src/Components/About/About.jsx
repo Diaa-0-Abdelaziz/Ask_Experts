@@ -3,6 +3,8 @@ import Main from './slices/Main'
 import OurVision from './slices/OurVision'
 import CoreValues from './slices/CoreValues'
 import OurHistory from './slices/OurHistory'
+import OurTeam from './slices/OurTeam'
+import BookNow from './slices/BookNow'
 
 export default function About() {
   return (
@@ -11,6 +13,8 @@ export default function About() {
     <OurVision/>
     <CoreValues/>
     <OurHistory/>
+    <OurTeam/>
+    <BookNow/>
     </>
   )
 }

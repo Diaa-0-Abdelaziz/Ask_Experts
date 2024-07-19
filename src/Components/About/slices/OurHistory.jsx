@@ -22,7 +22,7 @@ export default function OurHistory() {
                      <div className=' flex items-center justify-center border-[.3px]  rounded-full border-[#FFFFFF6B] bg-[#FFFFFF14] w-[109px] h-[109px]'>
                         <div className='flex items-center justify-center w-[87px] h-[87px] rounded-full bg-[#FFFFFF2B] border-[.3px] border-[#D0D0D0]'>
                             <div className='flex items-center justify-center cursor-pointer w-[67px] h-[67px] rounded-full bg-white group/play '>
-                                 <RiPlayLargeFill className=' text-[#3B3A5D] text-3xl group-hover/play:text-[#ff1f1f] transition-all duration-300'/>
+                                 <RiPlayLargeFill className=' text-[#3B3A5D] text-2xl group-hover/play:text-[#ff1f1f] transition-all duration-300'/>
                             </div>
                         </div>
                      </div>
