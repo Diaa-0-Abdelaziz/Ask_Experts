@@ -29,6 +29,10 @@ export default function Navbar() {
         pathname:'/about',
         navName:'About'
       },
+      {
+        pathname:'/services',
+        navName:'Services'
+      },
     ]
 
 

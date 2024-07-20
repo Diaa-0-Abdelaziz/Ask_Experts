@@ -5,6 +5,7 @@ import Layout from './layout/Layout';
 import Loading from './Loading';
 const Home = lazy(() => import('./Components/Home/Home'));
 const About = lazy(() => import('./Components/About/About'));
+const Services = lazy(() => import('./Components/Services/Services'));
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       children:[
         {index:true, element:<Suspense fallback={<Loading/>}><Home/></Suspense>},
         {path:'about', element:<Suspense fallback={<Loading/>}><About/></Suspense>},
+        {path:'services', element:<Suspense fallback={<Loading/>}><Services/></Suspense>},
       ]
     }
   ])

@@ -1,8 +1,8 @@
 import React from 'react'
 import MainShaired from '../../../ImportantSlicesSharedComponents/main'
 export default function Main() {
-  const pathImage = 'bg-[url(./imgs/about-main.jpg)]'
-  const headLine = 'PROCCESS'
+  const pathImage = 'bg-[url(./imgs/Photo-main-services.jpg)]'
+  const headLine = 'Services'
   const paragraph = 'Creative Services For Boost Your Business Growth'
   return (
       <MainShaired
