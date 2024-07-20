@@ -33,6 +33,10 @@ export default function Navbar() {
         pathname:'/services',
         navName:'Services'
       },
+      {
+        pathname:'/team',
+        navName:'Team'
+      },
     ]
 
 
