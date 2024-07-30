@@ -42,14 +42,14 @@ export default function Services() {
     <section className=' bg-[#F5F5F5] sm:mt-20 mt-64 py-28'> 
         <div className="container m-auto">
             <div className=' text-center'>
-            <span className='text-base font-normal text-[#FFFFFF] tracking-[2px]	 bg-[#4EAF4E] px-4	rounded-full'>SERVICES</span>
-            <p className=' m-auto text-[#181818] font-bold text-[45px] max-w-4xl '>Get Control Over Your Business I take your finance to next level</p>
+            <span data-aos="fade-right" className='text-base font-normal text-[#FFFFFF] tracking-[2px]	 bg-[#4EAF4E] px-4	rounded-full'>SERVICES</span>
+            <p data-aos="fade-right" className=' m-auto text-[#181818] font-bold text-[45px] max-w-4xl '>Get Control Over Your Business I take your finance to next level</p>
             </div>
 
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-8 mx-10'>
                 {services.map((data, index) => 
                 
-                <article key={index} className=' bg-[#EBEBEB] rounded-3xl p-10 hover:bg-[#181818]  cursor-pointer group/parent transition-all duration-500'>
+                <article key={index} data-aos="zoom-in" className=' bg-[#EBEBEB] rounded-3xl p-10 hover:bg-[#181818]  cursor-pointer group/parent transition-all duration-500'>
                  <img src={data.image} alt="" />
                  <p className='font-semibold text-[25px] group-hover/parent:text-white transition-all duration-500'>{data.title}</p>
                  <p className='font-normal text-base text-[#595566] group-hover/parent:text-white transition-all duration-500'>{data.descrip }</p>

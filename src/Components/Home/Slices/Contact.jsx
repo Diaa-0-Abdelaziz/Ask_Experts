@@ -4,14 +4,14 @@ import { LuClock3 } from "react-icons/lu";
 import { GrLocation } from "react-icons/gr";
 export default function Contact() {
   return (
-    <section className=' mt-28'>
+    <section className=' mt-28 overflow-hidden'>
        <div className=" mx-10 m-auto flex flex-wrap gap-5 justify-around">
        <div className=' '>
        <span className='text-base font-normal text-[#181818] tracking-[2px] bg-[#FFCC4A] px-4	rounded-full'>PROCCESS</span>
-      <h3 className='text-[45px] font-bold text-[#181818]'>Contact Us. It’s Easy.</h3>
-      <p className='text-base font-normal	text-[#595566] max-w-[420px]'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative.</p>      
+      <h3 data-aos="fade-right" className='text-[45px] font-bold text-[#181818]'>Contact Us. It’s Easy.</h3>
+      <p data-aos="fade-left" className='text-base font-normal	text-[#595566] max-w-[420px]'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative.</p>      
       <ul>
-                <li className=' relative flex justify-start gap-5 py-5'>
+                <li data-aos="zoom-in" className=' relative flex justify-start gap-5 py-5'>
                     <div>
                     <span className=' text-[26px] font-semibold w-[52px] h-[52px] rounded-full text-[#DEAA27] bg-[#FFECBB] flex justify-center items-center'> <PiPhoneLight/> </span>
                     </div>
@@ -20,7 +20,7 @@ export default function Contact() {
                         <p className=' font-semibold text-xl text-[#181818]	'>+1 800 100 900</p>
                     </div>
                 </li>
-                <li  className=' relative flex justify-start gap-5 py-5'>
+                <li data-aos="zoom-in"  className=' relative flex justify-start gap-5 py-5'>
                     <div>
                     <span className=' text-[26px] font-semibold	w-[52px] h-[52px] rounded-full text-[#4EAF4E] bg-[#A4EDA4] flex justify-center items-center'><LuClock3/></span>
                     </div>
@@ -29,7 +29,7 @@ export default function Contact() {
                         <p className=' font-semibold text-xl text-[#181818]	'>9AM - 5PM</p>
                     </div>
                 </li>
-                <li  className=' relative flex justify-start gap-5 py-5'>
+                <li data-aos="zoom-in"  className=' relative flex justify-start gap-5 py-5'>
                    <div>
                    <span className=' text-[26px] font-semibold	w-[52px] h-[52px] rounded-full text-[#181818] bg-[#EAEAEA] flex justify-center items-center'><GrLocation/></span>
                    </div>
@@ -43,7 +43,7 @@ export default function Contact() {
       
        </div>
 
-       <div className=' max-w-[688px]'>
+       <div className=' max-w-[688px]' data-aos="zoom-in">
        <form>
         <div className='flex flex-wrap gap-2 justify-around'>
         <div className="mb-5">

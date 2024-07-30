@@ -4,7 +4,7 @@ import photo2 from "../../../imgs/Proccess2.8.jpg"
 import photo8 from "../../../imgs/Photo (8).jpg"
 export default function BookNow() {
   return (
-    <section className=' my-20'>
+    <section className=' my-20'  data-aos="zoom-in">
      <div className=' p-10 rounded-special overflow-hidden  m-auto bg-[#181818] flex Screen-920:flex-row flex-col gap-y-20 items-center justify-between max-w-5xl'>
        <div>
        <span className='  text-base font-normal text-[#FFFFFF] tracking-[2px] bg-[#4EAF4E] px-4 uppercase	rounded-full'>Book Now</span>

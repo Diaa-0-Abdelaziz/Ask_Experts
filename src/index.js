@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import 'aos/dist/aos.css';
 // Base styles for media player and provider (~400B).
 import '@vidstack/react/player/styles/base.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));

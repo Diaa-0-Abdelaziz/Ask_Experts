@@ -61,39 +61,6 @@ export default function Proccess() {
                 
                </ul>
                </div>
-
-               {/* <div>
-               <span className='sm:text-base text-xs font-normal text-[#181818] tracking-[2px] bg-[#FFCC4A] px-4	rounded-full uppercase '>Growing with our clients</span>
-               <h2 className='text-[45px] font-bold text-[#181818] mb-10'>30 Years of Experience</h2>
-               <p className=' font-normal text-base	text-[#595566] mb-10'>Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
-               <p className=' font-normal text-base	text-[#595566] mb-10'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-               <div className='grid md:grid-cols-2 grid-cols-1 gap-4 mt-8'>
-             
-                
-                <article className=' border-2 bg-[#EBEBEB] rounded-3xl py-5 px-2'>
-                <i className='text-[26px] font-semibold w-[52px] h-[52px] rounded-full text-white bg-[#181818] flex justify-center items-center'><CgSandClock/></i>
-                 <p className='font-semibold text-[25px] '>Consistency</p>
-                 <p className='font-normal text-base text-[#595566]'>Podcasting operational change management  workflow.</p>
-                </article>    
-                <article className='border-2 bg-[#EBEBEB] rounded-3xl py-5 px-2'>
-                <i className='text-[26px] font-semibold w-[52px] h-[52px] rounded-full text-white bg-[#181818] flex justify-center items-center'><PiChartBar/></i>
-                 <p className='font-semibold text-[25px] '>Consistency</p>
-                 <p className='font-normal text-base text-[#595566]'>Podcasting operational change management  workflow.</p>
-                </article>    
-                <article className='border-2 bg-[#EBEBEB] rounded-3xl py-5 px-2'>
-                <i className='text-[26px] font-semibold w-[52px] h-[52px] rounded-full text-white bg-[#181818] flex justify-center items-center'><IoEarthOutline/></i>
-                 <p className='font-semibold text-[25px] '>Consistency</p>
-                 <p className='font-normal text-base text-[#595566]'>Podcasting operational change management  workflow.</p>
-                </article>    
-                <article className='border-2 bg-[#EBEBEB] rounded-3xl py-5 px-2'>
-                <i className='text-[26px] font-semibold w-[52px] h-[52px] rounded-full text-white bg-[#181818] flex justify-center items-center'><PiChartLine/></i>
-                 <p className='font-semibold text-[25px] '>Consistency</p>
-                 <p className='font-normal text-base text-[#595566]'>Podcasting operational change management  workflow.</p>
-                </article>    
-             
-            </div>
-               
-               </div> */}
             </div>
         </div>
     </section>

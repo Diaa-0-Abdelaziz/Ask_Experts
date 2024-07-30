@@ -1,7 +1,7 @@
 import React from 'react'
 import { PiPhoneLight } from "react-icons/pi";
 import photo2 from "../../../imgs/contact-team.jpg"
-export default function BookNow() {
+export default function Contact() {
   return (
     <section className=' my-20'>
      <div className=' py-10 px-20 rounded-special overflow-hidden  m-auto bg-[#181818] flex Screen-920:flex-row flex-col gap-y-20 items-center justify-between max-w-5xl'>
@@ -19,7 +19,7 @@ export default function BookNow() {
 
 
        
-        <div className=' lg:block hidden relative -top-20 -right-40 after:content-[""] after:z-20 after:bg-[url("./imgs/Pattern.svg")] after:bg-cover after:absolute after:w-[100px] after:h-[100px] after:bg-no-repeat after:top-5 after:-left-4  scale-[2.5] -rotate-[30deg]'>
+        <div className=' lg:block hidden relative -top-20 -right-40 after:content-[""] after:z-20 after:bg-[url("./imgs/Pattern.svg")] after:bg-cover after:absolute after:w-[80px] after:h-[80px] after:bg-no-repeat after:top-5 after:-left-4  scale-[2.5] -rotate-[30deg]'>
                     <img src={photo2} alt="she explaines to her something" className="rounded-md relative z-50 w-72" />
                 </div>
           

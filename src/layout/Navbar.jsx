@@ -37,6 +37,14 @@ export default function Navbar() {
         pathname:'/team',
         navName:'Team'
       },
+      {
+        pathname:'/blog',
+        navName:'Blog'
+      },
+      {
+        pathname:'/contact',
+        navName:'Contact'
+      },
     ]
 
 

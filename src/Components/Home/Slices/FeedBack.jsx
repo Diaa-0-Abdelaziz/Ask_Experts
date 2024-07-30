@@ -57,11 +57,11 @@ export default function FeedBack() {
     <section className=' overflow-hidden mt-10'>
       <div className=' max-w-[626px] p-2 m-auto text-center mb-10'>
       <span className='text-base font-normal text-[#FFFFFF] tracking-[2px] bg-[#4EAF4E] px-4 uppercase	rounded-full'>Client Feedback</span>
-      <p className=' text-[40px] text-[#CECECE] font-bold	'>
+      <p data-aos="fade-right" className=' text-[40px] text-[#CECECE] font-bold	'>
       “Lorem ipsum dolor sit amet, consectetur <span className=' text-[#181818]'>adipiscing elit, sed do eiusmod</span> tempor incididunt ut labore et dolore”
       </p>
       </div>
-       <div className=" w-96 m-auto">
+       <div className=" w-96 m-auto" data-aos="zoom-in">
          <Slider {...settings} className=' '>
           {products.map((pro)=> <div className='  ' key={pro.id}>
           

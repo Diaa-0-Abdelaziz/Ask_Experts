@@ -10,9 +10,9 @@ export default function Blog() {
     <div className=' flex flex-wrap md:justify-between justify-around  items-end mb-10'>
     <div>
     <span className='text-base font-normal text-[#FFFFFF] tracking-[2px] bg-[#4EAF4E] px-4 uppercase	rounded-full'>Blog</span>
-    <h2 className=' max-w-[600px] text-[45px] font-bold text-[#181818]  '>Take a look at our latest articles & resources</h2>
+    <h2  data-aos="fade-right" className=' max-w-[600px] text-[45px] font-bold text-[#181818]  '>Take a look at our latest articles & resources</h2>
     </div>
-    <div className=' w-[154.6px]'>
+    <div className=' w-[154.6px]' data-aos="fade-left">
     <p className=' m-auto rounded-full bg-[#FFCC4A] text-[#181818] py-4	px-8'>More News</p>
     </div>
      </div>
@@ -20,7 +20,7 @@ export default function Blog() {
 
 
      <div className=' flex lg:flex-row lg:w-full m-auto sm:w-4/5 w-full flex-col gap-10'>
-          <article>
+          <article data-aos="zoom-in">
             <img src={img1} alt=""  className=' rounded-2xl'/>
             <h4 className='text-3xl	font-semibold	text-[#181818] mt-5'>Consulting Fees Study 2019 (And How To Raise Your Rates)</h4>
             <p className=' text-[#595566] font-normal	text-base my-3	'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
@@ -39,7 +39,7 @@ export default function Blog() {
              </div>
           </article>
 
-          <article>
+          <article data-aos="zoom-in">
             <img src={img2} alt=""  className=' rounded-2xl'/>
             <h4 className='text-3xl	font-semibold	text-[#181818] mt-5'>Consulting Fees Study 2019 (And How To Raise Your Rates)</h4>
             <p className=' text-[#595566] font-normal	text-base my-3	'>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
